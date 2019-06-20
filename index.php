@@ -9,8 +9,8 @@ require_once('core/Autobus.php');
 
 if (!empty($_POST['action'])) {
   $passangers = new Autobus();
-  $a = implode($passangers->getAutobus(), ',');
-  echo $a;
+  $return_value = implode($passangers->getAutobus(), ',');
+  echo $return_value;
   exit();
 }
 else {
